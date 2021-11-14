@@ -1,0 +1,7 @@
+.card {
+    display: inline-block;
+    border: 1px solid lightcoral;
+    border-radius: 5%;
+    padding: 10px;
+    margin: 0 8px 0;
+}

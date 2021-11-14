@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div><button class="add_book">Add New Book</button>
+    
+    <div class="form" hidden>
+      <label>Title:<input id="title" type="text" required></label>
+      <label>Author:<input id="author" type="text" required></label>
+      <label>Pages:<input id="pages" type="number" min="0"></label>
+      <label>Read:<input id="read" type="checkbox"></label> 
+      <button class="enter">enter</button>
+    </div>
+
+  </div>
+
+  <div class="book_container"></div>
+</body>
+</html>
