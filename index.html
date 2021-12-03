@@ -11,13 +11,16 @@
 <body>
   <div><button class="add_book">Add New Book</button>
     
-    <div class="form" hidden>
+    <form class="form" hidden>
       <label>Title:<input id="title" type="text" required></label>
       <label>Author:<input id="author" type="text" required></label>
-      <label>Pages:<input id="pages" type="number" min="0"></label>
-      <label>Read:<input id="read" type="checkbox"></label> 
+      <label>Pages:<input id="pages" type="number" min="0" required></label>
+      <p>Read:
+        <label>Yes<input id="read" type="radio" name="read" value="yes" required></label> 
+        <label>No<input id="read" type="radio" name="read" value="no" required></label> 
+      </p>
       <button class="enter">enter</button>
-    </div>
+    </form>
 
   </div>
 

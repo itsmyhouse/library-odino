@@ -60,12 +60,20 @@ let button_enter = document.querySelector("button.enter");
 
  button_enter.addEventListener("click", function() {
 
-  let title = document.getElementById("title").value;
-  let author = document.getElementById("author").value;
-  let pages = document.getElementById("pages").value;
-  let read = document.getElementById("read").checked;
+  let title = document.getElementById("title");
+  let author = document.getElementById("author");
+  let pages = document.getElementById("pages");
+  let read = document.getElementById("read");
+
+  if( 
+    !title.checkValidity() 
+    || !author.checkValidity() 
+    || !pages.checkValidity() 
+    || !read.checkValidity()
+    ) 
+    return;
   
-  let new_book = new Book(title, author, pages, read);
+  let new_book = new Book(title.value, author.value, pages.value, read.value);
   
   addCard(myLibrary.length ,new_book);
   myLibrary.push(new_book);
